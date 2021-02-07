@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/mywayicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloscontacto.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        <!--
+        function sendMail() {
+            var link = "mercedesremesal@hotmail.com"; +
+            "?cc=mercedesremesal@hotmail.com" +
+            "&subject=" + escape("Info Web") +
+                "&body=" + escape("Mi nombre es: " + document.getElementById('name').value);
+
+            var n = document.forms[0].name.value;
+            var m = document.forms[0].mail.value;
+            var t = document.getElementById("test");
+            var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/;
+            if (n.length >= 2 && filter.test(m)) {
+                window.location.href = "mailto:" + link;
+                return true;
+            } else {
+                t.innerHTML = "Revisa los datos . . .";
+                setTimeout(function() {
+                    t.innerHTML = ". . ."
+                }, 2000);
+                return false;
+            }
+        }
+        //-->
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html">A cerca de</a>
+            <a href="queofrecemos.html">Qué ofrecemos</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Contacta con May Way</h1>
+            <h2>Pilates - Reiki - Hipopresívos- masajes- acupuntura</h2><br>
+            <h2>673 65 36 89</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: rgb(72, 13, 128);"></path>
+                </svg></div>
+    </header>
+
+    <form>
+
+        <label for="telf">Tu Teléfono</label>
+        <input type="text" id="telf" name="telf" value="">
+        <label for="name">Tu Nombre</label>
+        <input type="text" id="name" name="name" value="">
+        <label for="mail">Tu Correo</label>
+        <input type="text" id="mail" name="mail" value="">
+        <label for="test" id="test">. . .</label>
+        <input type="button" value="C O N T A C T A" onclick="sendMail();this.blur()">
+
+    </form>
+
+    <footer>
+        <div class="contenedor-footer ">
+            <div class="content-foo ">
+                <h2 style="color: white">
+                    <font size="6">Teléfono</font>
+                </h2>
+                <p>
+                    <a href=" tel:34673653689 ">Llamanos por Teléfono</a>
+                </p>
+            </div>
+            <div class="content-foo ">
+                <h2 style="color: white">
+                    <font size="6">Página de Facebook</font>
+                </h2>
+                <p>
+                    <a href=" http://www.facebook.com/saluddeportebellezmyway ">Página de Facebook</a>
+                </p>
+            </div>
+            <div class="content-foo ">
+                <h2 style="color: white">
+                    <font size="6">Mensaje de WhatsApp</font>
+                </h2>
+                <p><a href=" https://api.whatsapp.com/send?phone=34673653689 ">Envíanos un mensaje de WhatsApp</a></p>
+            </div>
+        </div>
+        <h4 class="titulo-final ">&copy; Sitio Web del centro de pilates My Way Plasencia| Biemot Programming Service c2.021 617854099</h4>
+    </footer>
+</body>
+
+</html>

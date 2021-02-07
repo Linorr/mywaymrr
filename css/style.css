@@ -1,0 +1,1384 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+	text-align: center;
+}
+
+/*
+ * Typography
+ */
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #2150ae;
+}
+
+#main b, #main strong {
+	font-weight: 600;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 38px;
+	margin-top: 0 !important;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+*::selection {
+	background-color: #000;
+	color: #ffffff;
+}
+*::-moz-selection {
+	background-color: #000;
+	color: #ffffff;
+}
+
+
+/*
+ * Structure
+ */
+
+#topBlock {
+	background-color: #fff;
+}
+
+#contentBlock {
+	background-color: #f2f5fc;
+}
+
+.ie7 #contentBlock {
+	float: none;
+	clear: none;
+}
+
+#bottomBlock {
+	background-color: #000;
+}
+
+#scroll-top {
+	background: url("../azar_hotel_bin/scroll.png") no-repeat;
+	color: #ffffff;
+	width: 49px;
+	height: 51px;
+	text-indent: -9999px;
+}
+
+
+
+/*
+ * top block
+ */
+
+.hotellogo {
+	background: url("../azar_hotel_bin/hotel_logo.png") no-repeat left;
+	height: 120px !important;
+}
+
+.ie7 .hotellogo, .ie8 .hotellogo {
+	background: url("../azar_hotel_bin/hotel_logo_ie.png") no-repeat 0 center;
+}
+
+.languages {
+	float: right;
+}
+
+.languages li {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+    height: 32px;
+    width: 32px;
+}
+
+.languages li:hover {
+	background-color: #f3f3f3;
+	height: 32px;
+    width: 32px;
+}
+
+.languages li a:hover {
+	text-decoration: none;
+}
+
+.languages li a {
+	line-height: 30px;
+	color: #000;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.languages li .active {
+	background-color: #c6c6c6;
+}
+
+#topBlock .hoteladdress {
+	text-align: right;
+}
+
+.hoteladdress address {
+	font-style: normal;
+}
+
+#topBlock .hoteladdress address a {
+	background-size: auto 85%;
+}
+
+.address {
+	background: url("../azar_hotel_bin/pin.png") no-repeat center center;
+}
+
+.phone {
+	background: url("../azar_hotel_bin/phone.png") no-repeat center center;
+}
+
+.navigation li:after {
+	display: none;
+}
+
+.nav li a {
+	color: #808182;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	position: relative;
+}
+
+.nav li.active a {
+	color: #c9c9c9;
+}
+
+.nav li:hover a{
+	color: #c9c9c9;
+}
+
+/* toggle menu */
+#toggleNav {
+	color: #000;
+	font-weight: 600;
+	background: #f3f3f3 url("../azar_hotel_bin/down.png") no-repeat 95% center;
+}
+
+.opened .nav {
+	border: 1px solid #bababa;
+}
+
+
+
+/*
+ * central block
+ */
+
+.no-banner .flashContainer:after {
+	display: none;
+}
+
+#main .flashContainer .gcb_image_legend {
+	text-align: center;
+	line-height: 52px;
+	top: 40%;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.flashContainer .gcb_navigation_arrow {
+	background: url("../azar_hotel_bin/banner_arrows.png") no-repeat;
+}
+
+.flashContainer .next, .flashContainer .gcb_container:hover .next, .flashContainer .gcb_navigation:hover .next:hover {
+	background-position: 0 0;
+}
+
+.flashContainer .previous, .flashContainer .gcb_container:hover .previous, .flashContainer .gcb_navigation:hover .previous:hover {
+	background-position: 0 -80px;
+}
+
+.flashContainer .gcb_navigation_paginator {
+	background: none;
+}
+
+.flashContainer .gcb_navigation_paginator ul {
+	margin: 0;
+}
+
+.flashContainer .gcb_navigation_paginator ul li {
+	background: #ffffff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.flashContainer .gcb_navigation_paginator ul .selected {
+	background: #000;
+	border: 2px solid #ffffff;
+}
+
+/* with ShortHand */
+
+.bookingGadget {
+	background: #181818;
+	color: #ffffff;
+}
+
+.bookingGadget .gc_sh * {
+	font-size: 1.1em;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.bookingGadget .gc_sh .gc_horizontalSh .shortHandTitle {
+    font-size: 0.8em;
+    color: #181818;
+    line-height: 22px;
+    font-weight: 400;
+    border: none;
+    text-align: center;
+    background: #fff;
+}
+
+.bookingGadget .gc_sh .gc_horizontalSh .shortHandDate,
+.bookingGadget .gc_sh .gc_horizontalSh .shortHandNrNights {
+	background: rgba(0,0,0,0.3);
+}
+
+.bookingGadget .gc_sh .gc_horizontalSh .checkinLabel,
+.bookingGadget .gc_sh .gc_horizontalSh .shortHandNrNightsLabel {
+	font-size: 0.85em;
+	text-align: right;
+	line-height: 30px;
+	color: #808182;
+}
+
+.bookingGadget .gc_sh .startDay,
+.bookingGadget .gc_sh .yui-menu-button button {
+	border: none;
+	border-right: none;
+	text-align: center;
+	font-size: 1.25em;
+	line-height: 33px;
+	color: #808182;
+	background: none;
+}
+
+.bookingGadget .gc_sh .yui-calcontainer {
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.bookingGadget .gc_sh .shortHandCalendarIcon {
+	border: none;
+	background: url("../azar_hotel_bin/be_dropdown.png") no-repeat center;
+}
+
+.bookingGadget .gc_sh .yui-menu-button button {
+	background: url("../azar_hotel_bin/be_dropdown.png") no-repeat 90% center;
+}
+
+.bookingGadget .gc_sh .yui-calcontainer .calheader {
+	background: #fff;
+    line-height: 35px;
+    color: #2150ae;
+    font-size: 0.7em;
+}
+
+.bookingGadget .gc_sh .yui-calendar .calnavright,
+.bookingGadget .gc_sh .yui-calendar .calnavleft {
+	background: url("../azar_hotel_bin/be_arrows.png") no-repeat center 0;
+}
+
+.bookingGadget .calweekdayrow {
+	background: #d8d8d8;
+}
+
+.bookingGadget .gc_sh .yui-calendar .calweekdaycell {
+	border: none;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.bookingGadget .gc_sh .yui-calendar .calnavleft {
+	background-position: center -35px;
+}
+
+.bookingGadget .gc_sh .yui-calendar .calcell {
+	font-size: 18px;
+	color: #b0b0b0;
+}
+
+.bookingGadget .gc_sh .yui-calendar .selected,
+.bookingGadget .gc_sh .yuimenu li:hover {
+	background: #2150ae;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.bookingGadget .gc_sh .yui-calendar .selectable a:hover {
+	color: #72ae71;
+}
+
+.bookingGadget .gc_sh .yui-calendar .selected a:hover {
+	color: #ffffff;
+}
+
+.bookingGadget .gc_sh .yuimenu .bd {
+	border: none;
+	background: none;
+}
+
+.bookingGadget .gc_sh .yuimenu .bd ul {
+	background: #ffffff;
+	border: 1px solid #d8d8d8;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.bookingGadget .gc_sh .yuimenu a:hover,
+.bookingGadget .gc_sh .yuimenu li:hover a {
+	color: #ffffff;
+}
+
+#main .bookingGadget .gc_sh .shortHandCheckRates {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	background: #2150ae;
+}
+
+#main .bookingGadget.fixed {
+	width: 180px;
+}
+
+.ie7 .bookingGadget .gc_sh .shortHandCheckRates {
+	padding-top: 2%;
+	padding-bottom: 7%;
+	line-height: auto;
+}
+
+#main .bookingGadget .gc_sh .shortHandCheckRates:hover,
+#main .bookingGadget .booknow:hover {
+	background: #7f8081;
+}
+
+.bookingGadget .gc_sh .shortHandCheckRates.fixed {
+	border: none;
+	font-size: 0.8em;
+	background-size: auto 35%, auto;
+	-webkit-background-size: auto 35%, auto;
+	-moz-background-size: auto 35%, auto;
+}
+
+/* Book button fixed */
+
+#main .bookingGadget.fixed .gc_sh .gc_horizontalSh .shortHandTitle {
+	width: 220px;
+    color: #181818;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 36px;
+    background: #c9c9c9;
+    right: 180px;
+}
+
+.bookingGadget.fixed .gc_sh .gc_horizontalSh .shortHandTitle,
+.no-banner .bookingGadget .gc_sh .gc_horizontalSh .shortHandTitle,
+.hotel-directions .bookingGadget .gc_sh .gc_horizontalSh .shortHandTitle  {
+	font-size: 12px;
+	line-height: 32px;
+}
+
+/*
+quicklinks
+*/
+
+#main .quicklinks {
+	background: #000;
+	text-align: right;
+	padding: 0 10%;
+}
+
+#main .quicklinks.fixed {
+	box-shadow: 0 0 15px rgba(0,0,0,0.40);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.40);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.40);
+}
+
+#main .quicklinks li {
+	line-height: 40px;
+}
+
+#main .quicklinks li:after {
+	width: 1px;
+    height: 23px;
+    margin: 0 8px -10px;
+    background: #7b7479;
+}
+
+#main .quicklinks li a {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#main .quicklinks li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+
+/*
+ * content block
+ */
+
+#imagelinksHolder {
+	background: #181818;
+}
+
+.imgTitle {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(50, 50, 44, 0.8);
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.imgDescription {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+
+#main .imgLink {
+    color: #2150ae;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    padding: 0 20px 2px;
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+#main .imgLink:hover {
+	color: #000;
+}
+
+#main .imagelinkgadget .wrapper {
+	background: #fff;
+}
+
+.imgImageWrapper {
+	background-color: #2150ae;
+}
+
+.imgImageWrapper span {
+	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.imagelinkgadget:hover .imgImageWrapper span {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#main .imagelinkgadget.large-image .imgDescription {
+    padding: 20px;
+}
+
+.with-sidebar .imgLink a {
+	font-size: 11px;
+}
+
+.content {
+	text-align: justify;
+}
+
+.content p {
+	clear: both;
+	overflow: hidden;
+}
+
+#sidebar {
+	background: #fff;
+}
+
+#sidebar > div {
+	border-top: 1px solid #fbfbfb;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+#sidebar > div:first-of-type {
+	border-top: none;
+}
+
+#sidebar > div:last-of-type {
+	border-bottom: none;
+}
+
+/* promotion widget */
+.prgTitle {
+	font-size: 1.2em;
+	color: #000;
+	font-weight: 400;
+}
+
+.prgImgWrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 35%;
+	overflow: hidden;
+}
+
+.prgImgWrapper img {
+	width: auto;
+	height: 100%;
+}
+
+.prgDescription {
+	font-size: 0.9em;
+}
+
+.prgClick {
+	font-size: 0.8em;
+	background-color: #000;
+    padding: 0 2px;
+    color: #fff;
+}
+
+/* promo on content */
+.content .promotionsgadget {
+	background: #f1f1f1;
+}
+
+/* promo on banner */
+#main .flashContainer .promotionsgadget {
+	background: #181818;
+	color: #fff;
+	text-align: left;
+}
+
+#main .flashContainer .promotionsgadget .prgTitle {
+	color: #fff;
+	font-size: 2em;
+}
+
+#main .flashContainer .promotionsgadget .prgDescription {
+	font-size: 1.25em;
+}
+
+#main .flashContainer .promotionsgadget .prgClick {
+	background: url("../azar_hotel_bin/book.png") no-repeat 0 0;
+}
+
+/* product on sidebar */
+#main #sidebar .productContainer.voucher .promotions-termsActions .promotions-bgLink {
+	font-size: 0.9em;
+	background: #000;
+	color: #fff;
+}
+
+/* rooms widget */
+
+#sidebar .productContainer.voucher .roomName h2 {
+	font-size: 1.2em;
+    color: #000;
+    font-weight: 400;
+}
+
+/* weather gadget */
+#main .weather-shell {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* tripadvisor widget */
+.tasidebar {
+	border-bottom: none !important;
+}
+
+#TA_mini_pane {
+	background: #fbfbfb;
+	font-size: 0.75em;
+}
+
+#TA_mini_pane td a {
+	text-decoration: none;
+}
+
+
+
+/*
+ * bottom block
+ */
+
+
+#bottomBlock a {
+	text-decoration: none;
+	color: #ffffff !important;
+	font-weight: 400;
+}
+
+.socialmedia li {
+	background: url("../azar_hotel_bin/socialmedia_ic.png") no-repeat 0 0;
+	margin: 0 0.3% !important;
+	line-height: 26px !important;
+	-webkit-transition: all .2s ease-in-out; /* Safari and Chrome */
+    -moz-transition: all .2s ease-in-out; /* Firefox */
+    -o-transition: all .2s ease-in-out; /* IE 9 */
+    -ms-transition: all .2s ease-in-out; /* Opera */
+    transition: all .2s ease-in-out;
+}
+
+.socialmedia li:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.socialmedia .facebook {
+	background-position: 0 0;
+}
+
+.socialmedia .twitter {
+	background-position: 0 -64px;
+}
+
+.socialmedia .youtube {
+	background-position: 0 -162px;
+}
+
+.socialmedia .flickr {
+	background-position: 0 -72px;
+}
+
+.socialmedia .pinterest {
+	background-position: 0 -96px;
+}
+
+.socialmedia .tripadvisor {
+	background-position: 0 -193px;
+}
+
+.socialmedia .newsletter {
+	background-position: 0 -226px;
+}
+
+.socialmedia .sharethis {
+	text-indent: 0;
+}
+
+#bottomBlock .holder {
+	margin: 10px;
+	max-width: 100%;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+#bottomBlock #seals .holder {
+	margin: 0 auto;
+	max-width: 80%;
+	border: none;
+}
+
+#bottomBlock #seals .holder {
+	margin: 0 auto;
+}
+
+#bottomBlock .hoteladdress {
+	color: #ffffff;
+	padding: 0.5% 0 2.5% 0 !important;
+	font-size: 15px;
+}
+
+#bottomBlock .hoteladdress:after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 52px;
+	margin: 20px auto 0;
+	background: url("../azar_hotel_bin/footer_after.png") no-repeat;
+}
+
+#bottomBlock .hoteladdress a {
+	background: none;
+}
+
+#bottomBlock .footerMenu {
+	padding: 1% 10% 3%;
+}
+
+#bottomBlock .footerMenu li a {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+}
+
+.footerMenu li:after {
+	background: #ffffff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+#bottomBlock .footerMenu li a:hover {
+	color: #c9c9c9 !important;
+}
+
+#seals {
+	background: url("../azar_hotel_bin/seals_bg.png") repeat-x 0 0;
+	height: 70px;
+}
+
+
+/*
+ * if page has no banner
+ */
+
+.noBanner .bookingGadget .gc_sh .gc_horizontalSh {
+	border: none;
+}
+
+.noBanner .bookingGadget .gc_sh * {
+	font-size: 1em;
+}
+
+.noBanner .bookingGadget .gc_sh .shortHandTitle {
+	font-size: 1.25em;
+	border: none;
+}
+
+.noBanner .bookingGadget .gc_sh .shortHandDate, .noBanner .bookingGadget .gc_sh .shortHandNrNights {
+	float: left;
+	border: 0;
+	padding: 0;
+	clear: none;
+}
+
+.noBanner .bookingGadget .gc_sh .checkinLabel, .noBanner .bookingGadget .gc_sh .shortHandNrNightsLabel {
+	font-size: 0.85em;
+}
+
+.noBanner .bookingGadget .shortHandButton {
+	border: none;
+}
+
+
+
+/*
+ * room types & special offers & products & addons
+ */
+
+.roomContainer {
+	text-align: center;
+}
+
+#main .roomName h2 {
+	color: #fff;
+	font-size: 28px;
+	line-height: 30px;
+	text-shadow: 2px 2px 4px rgba(50, 50, 44, 0.8);
+}
+
+#main .roomContainer.room-opened .roomName h2 {
+	color: #000;
+	text-shadow: none;
+}
+
+#main .roomContainer.room-opened {
+	background: #fff;
+}
+
+#main .roomContainer.room-opened .roomDescription {
+	background-color: #fff;
+}
+
+#main .roomContainer.room-opened .roomDescription ul {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+}
+
+#main .roomContainer.room-opened .roomDescription li {
+	width: 50%;
+	float: left;
+}
+
+#main .roomContainer.room-opened .roomDescription.mealplan {
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+	text-align: left;
+	margin-left: 20px;
+	padding-bottom: 0;
+}
+
+.minRate {
+	text-align: right;
+}
+
+.roomPhoto .pgContainer .pgImage a label, .roomPhoto .pgContainer .pgImage a span {
+	font-size: 1em;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.roomContainer .roomPhoto .pgContainer .pgImage a, .roomName {
+	-webkit-transition: all .2s ease-in-out; /* Safari and Chrome */
+    -moz-transition: all .2s ease-in-out; /* Firefox */
+    -o-transition: all .2s ease-in-out; /* IE 9 */
+    -ms-transition: all .2s ease-in-out; /* Opera */
+    transition: all .2s ease-in-out;
+}
+
+.roomContainer:hover .roomPhoto .pgContainer .pgImage a {
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+}
+
+.roomPhoto:after {
+	content:"";
+	display: block;
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #2150ae;
+	pointer-events: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.roomContainer:hover .roomPhoto:after {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.roomContainer.room-opened .roomPhoto:after {
+	display: none;
+}
+
+.roomContainer.room-opened .roomPhoto:before {
+	display: block;
+	content: "";
+	position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: url("../azar_hotel_bin/seemore.png") no-repeat center;
+    text-indent: -999999px;
+}
+
+.mealplan {
+	font-size: 1em;
+	color: #000;
+}
+
+.roomContainer.clicked .roomPhoto:after {
+	content:"";
+	display: block;
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #2150ae;
+	pointer-events: none;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.roomContainer.clicked .pgContainer:hover .pgImage {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+
+}
+
+.content .promotions-termsActions .promotions-bgLink {
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	color: #ffffff;
+	background: #2150ae;
+	width: 100%;
+	padding: 8px 16px !important;
+	float: right;
+}
+
+.content .promotions-termsActions .promotions-bgLink:hover {
+	color: #ffffff;
+	background: #000;
+}
+
+#showmore {
+	font-size: 2em;
+	color: #000;
+}
+
+.showmore #showmore {
+	background: url("../azar_hotel_bin/less.png") no-repeat 0 center;
+}
+
+.content .promotions-termsActions .promotions-showTermsTrigger {
+	border-top: none;
+	border-bottom: none;
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.content .promotions-termsActions .promotions-showTermsTrigger:hover {
+	color: #2150ae;
+}
+
+.content .promotions-termsContent .promotions-closeTermsShell .promotions-closeTerms {
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.content .promotions-termsContent .promotions-closeTermsShell .promotions-closeTerms:hover {
+	color: #2150ae;
+}
+
+.content .promotions-termsContent {
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	background: #ffffff;
+}
+
+
+/*
+ * room comparison
+ */
+
+.content .compareRoomsLink a {
+	font-size: 1em;
+	border: none;
+	color: #ffffff;
+	box-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.4);
+	background-color: #744c4c;
+	background-position: 10px center, 0 0;
+}
+
+.content .compareRoomsLink a:hover {
+	color: #ffffff;
+	background-color: #e97900;
+	background-repeat: no-repeat, repeat;
+	box-shadow: none;
+}
+
+.content .compareContent .compareLabels ul .name, .content .compareContent .compareRooms ul .name {
+	background: none;
+	font-size: 1em;
+	box-shadow: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+.content .compareLabels ul li {
+	background: none;
+	border-bottom: 1px solid #cccccc;
+	font-size: 1em;
+}
+
+.content .roomsContent .roomEven, .content .roomsContent .room:nth-child(2n+1) {
+	background: #f1f1f1;
+}
+
+.content .roomsContent .roomOdd, .content .roomsContent .room:nth-child(2n+2) {
+	background: #ffffff;
+}
+
+.content .compareContent .compareRooms .roomsContent .room:hover {
+	background: #dddddd;
+	box-shadow: none;
+}
+
+.content .roomsContent .room ul li {
+	border-bottom: 1px solid #cccccc;
+}
+
+.roomsContent .room ul .baseadults {
+	border-top: 1px solid #cccccc;
+}
+
+.compareContent .bookNowButton a {
+	font-size: 0.8em;
+	letter-spacing: 0;
+	color: #ffffff;
+	box-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.4);
+	background-color: #7b8f2a;
+}
+
+.compareContent .bookNowButton a:hover {
+	background-color: #72ae71;
+}
+
+
+/*
+ * gallery
+ */
+
+#pg .pgContainer {
+	background-color: #000;
+}
+
+.pgImage a {
+	/* check rule: '.roomPhoto .pgContainer .pgImage a' */
+}
+
+.pgImage a img {
+	/* check rule: '.roomPhoto .pgContainer .pgImage a img' */
+}
+
+.pgText strong {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 24px;
+	line-height: 28px;
+	text-shadow: 2px 2px 4px rgba(50, 50, 44, 0.8);
+}
+
+
+/*
+ * contact forms
+ */
+
+.content #contacts_form input, .content input,
+.content #contacts_form select, .content select,
+.content #contacts_form textarea, .content textarea {
+	background: #fff;
+	color: #000;
+	border: 1px solid #fff;
+}
+
+.webkit .content #contacts_form select, .webkit .content form select,
+.mobile.gecko .content #contacts_form select, .mobile.gecko .content form select {
+	background-image: url("../azar_hotel_bin/down.png");
+	background-repeat: no-repeat;
+	background-position: 98% center;
+}
+
+label[for="ckbnotifyme"] {
+	font-size: 0.7em;
+}
+
+.content #contacts_form input[type="submit"], .content input[type="submit"] {
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	color: #ffffff;
+	background: #2150ae;
+	text-transform: uppercase;
+	clear: both;
+	border: none;
+}
+
+.content #contacts_form input[type="submit"]:hover, .content input[type="submit"]:hover {
+	color: #ffffff;
+	background: #000;
+}
+
+
+
+/*
+ * location & google maps
+ */
+
+#map_canvas {
+	border: 5px solid #ffffff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+#map_canvas strong {
+	font-size: 1.25em;
+}
+
+
+/*
+ * tripadvisor
+ */
+
+.content #TA_Container {
+	border: none;
+}
+
+.TA_rtable {
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.content .TA_rtable td {
+	border: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+.content .TA_rname {
+	font-weight: 700;
+	font-size: 1.25em;
+}
+
+
+/** generic transitions **/
+.nav li a, .bookinggadget .gc_sh .shortHandCheckRates, .bookinggadget, .quicklinks li a, .footermenu li a, .toggle span,
+.navigation, .roomContainer .promotions-termsActions .promotions-bgLink, .contactFormContainer #contacts_form input[type="submit"],
+#subscribe_newsletter_form input[type="submit"], #imagelinksHolder .top-box-small .imgLink, #imagelinksHolder .top-box-medium .imgLink, .imgLink
+{
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	-ms-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.40s;
+	-moz-transition-duration: 0.40s;
+	-o-transition-duration: 0.40s;
+	-ms-transition-duration: 0.40s;
+	transition-duration: 0.40s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+/** opacity transitions **/
+
+.scroll, .hotellogo img, #contentblock .roomContainer .pgContainer, .socialmedia li a, .imagelinkgadget .imgImageWrapper img,
+#pg .pgContainer .pgImage, .imgLink span, .imgImageWrapper
+{
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	-ms-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+
+/*
+ * responsive stuff
+ */
+
+@media all and (max-width: 1280px) {
+	.bookingGadget .gc_sh .gc_horizontalSh .checkinLabel, .bookingGadget .gc_sh .gc_horizontalSh .shortHandNrNightsLabel {
+		font-size: 0.8em;
+	}
+}
+
+@media all and (max-width: 1100px) {
+	.bookingGadget .gc_sh .gc_horizontalSh .checkinLabel, .bookingGadget .gc_sh .gc_horizontalSh .shortHandNrNightsLabel {
+		font-size: 0.65em;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.navigation li a {
+		font-size: 0.85em;
+	}
+}
+
+@media all and (max-width: 940px) {
+	.navigation ul {
+		background: #ffffff;
+	}
+	.navigation li {
+		text-align: center;
+	}
+	.navigation li a {
+		color: #181818;
+		font-size: 1.25em;
+	}
+	/* content */
+	.bookingGadget .gc_sh .startDay, .bookingGadget .gc_sh .yui-menu-button button {
+		font-size: 1em;
+	}
+	.hotel-directions #main .flashContainer {
+		height: 380px;
+	}
+}
+
+@media all and (max-width: 740px) {
+	#bottomBlock:before {
+		display: none;
+	}
+	.footerMenu {
+		margin-left: 0 !important;
+	}
+	#main .flashContainer .gcb_image_legend {
+	    top: 30%;
+	    font-size: 1.4em;
+	}
+
+}
+
+@media all and (max-width: 720px) {
+	#bottomBlock .languages {
+		background-position: 95% center;
+	}
+	/* content */
+	.bookingGadget .gc_sh .shortHandCheckRates {
+		font-size: 3em;
+	}
+/*	.hotel-directions #main .flashContainer {
+		height: 380px;
+		margin-top: 45px;
+	}
+	#main .flashContainer {
+		margin-top: 40px;
+	}*/
+	.flashContainer .gcb_navigation,
+	#scroll-top {
+		display: none !important;
+	}
+
+	.hotellogo {
+		background: url("../azar_hotel_bin/hotel_logo.png") no-repeat left;
+    	background-size: auto 80%;
+    	-webkit-background-size: auto 80%;
+    	-moz-background-size: auto 80%;
+    	height: 100px !important;
+	}
+}
+
+@media all and (max-width: 580px) {
+	#toggleNav {
+		background: url("../azar_hotel_bin/mobile_menu_ic.png") no-repeat center;
+		background-size: 70%;
+	}
+	#toggleNav.opened {
+		border-bottom: none;
+	}
+	/* content */
+	.bookingGadget .gc_sh .shortHandCheckRates {
+		font-size: 1.65em;
+	}
+/*	.hotel-directions #main .flashContainer {
+		margin-top: 13px;
+		height: 330px;
+	}*/
+	.hotellogo {
+		height: 80px !important;
+		background:  url("../azar_hotel_bin/hotel_logo_mob.png") no-repeat center left;
+	}
+	.pgText {
+		height: auto !important;
+	}
+	.minRate h3 {
+		margin: 20px 10px !important;
+	}
+	.content #contacts_form #cbnradultsShell,
+	.content #contacts_form #cbnrchildrenShell,
+	.content #contacts_form #cbnrnightsShell,
+	.content #contacts_form #fcheckinShell,
+	#contacts_form #cbnrnights,
+	#contacts_form #cbnradults,
+	#contacts_form #cbnrchildren,
+	#contacts_form #cbamount,
+	#contacts_form #reservationFields .inline {
+    	width: 100% !important;
+	}
+	#contacts_form #fcheckin {
+		width: 91% !important
+	}
+	#main .roomName h2 {
+		font-size: 24px;
+	}
+	#main .roomContainer.room-opened .roomName h2 {
+		font-size: 20px;
+	}
+}
+
+
+
+/*
+ * Mobile website render - body class="mobileapp"
+ */
+
+.bookingGadget .booknow {
+	color: #ffffff;
+	font-size: 1.3em;
+	box-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.4);
+	background-color: #000;
+}
+
+.mobileapp .bookingGadget .booknow {
+	font-size: 2em;
+}
+
+/**cookies**/
+
+.cookiesWarning {
+	position: fixed !important;
+}
